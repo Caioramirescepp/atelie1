@@ -7,8 +7,13 @@
   </head>
 <body style="margin: 0; overflow: hidden;">
   <a-scene vr-mode-ui="enabled: false" embedded arjs="debugUIEnabled: false">
+    <a-assents>
+      <a-sset-item id="dinossauro" src="dinossauro 44.glb"></a-sset-item>
+    </a-assents>
     <a-marker preset="hiro">
-      <a-image src="imagem1.jpg" rotation="-90 0 0" width="1.5"></a-image>
+      <a-entity id="dinossauro"
+        gltf-model="dinossauro">
+        </a-entity>
     </a-marker>
     <a-entity camera></a-entity> 
   </a-scene>
