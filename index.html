@@ -7,13 +7,9 @@
   </head>
 <body style="margin: 0; overflow: hidden;">
   <a-scene vr-mode-ui="enabled: false" embedded arjs="debugUIEnabled: false">
-     <a-assets>
-      <a-sset-item id="dinossauro" src="dinossauro44.glb"></a-sset-item>
-    </a-assents>
-    <a-marker preset="hiro">
-      <a-entity gltf-model="dinossauro44" scale="0.5 0.5 0.5" position="0 0 0">
-        </a-entity>
-    </a-marker>
+     <a-marker type="pattern" url=pattern-marcador.patt">
+       <a-image scr="imagem1.jpg" position"0.5 0" rotation="-90 0 0" width="1.5"><image>
+       </a-marker>
     <a-entity camera></a-entity> 
   </a-scene>
 </body>
