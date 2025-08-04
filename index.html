@@ -1,24 +1,33 @@
-<DOCTYPE html> 
+<!DOCTYPE html>
 <html>
   <head>
-    <tiltle>Segundo Projeto de Ra usando o marcador Hiro e mostrando um cubo</tiltle>
+    <title>Segundo Projeto de RA usando o marcador Hiro e mostrando um dinossauro</title>
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.min.js"></script>
   </head>
-<body style="margin: 0; overflow: hidden;">
-  <a-scene vr-mode-ui="enabled: false" embedded arjs="debugUIEnabled: false">
-    <a-assents>
-      <a-sset-item id="dinossauro" src="dinossauro 44.glb"></a-sset-item>
-    </a-assents>
-    <a-marker preset="hiro">
-      <a-entity id="dinossauro"
-        gltf-model="dinossauro">
+  <body style="margin: 0; overflow: hidden;">
+    <a-scene vr-mode-ui="enabled: false" embedded arjs="debugUIEnabled: false">
+      
+      <a-assets>
+        <!-- Corrigido para a-assets e asset-item -->
+        <a-asset-item id="dinossauro" src="dinossauro44.glb"></a-asset-item>
+      </a-assets>
+
+      <a-marker preset="hiro">
+        <a-entity 
+          gltf-model="#dinossauro" 
+          scale="0.5 0.5 0.5" 
+          position="0 0 0"
+          rotation="0 0 0">
         </a-entity>
-    </a-marker>
-    <a-entity camera></a-entity> 
-  </a-scene>
-</body>
+      </a-marker>
+
+      <a-entity camera></a-entity>
+      
+    </a-scene>
+  </body>
 </html>
+
 
 
   <!--
